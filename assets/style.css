@@ -31,3 +31,25 @@ p{
     font-family: "Blockstepped";
     font-size: 18px;
 }
+@media only screen and (max-width: 640px){
+    #click-button {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: rgb(66,103,178);
+    color: rgb(236, 236, 236);
+    font-family: "FacebookLetterFaces";
+    font-size: 32px;
+    margin-top: 2%;
+    margin-left: 1%;
+  outline: none;
+  /* box-shadow: 0px 15px #999; */
+  border: outset 10px rgb(247, 243, 243);
+}
+#click-button:active {
+    border: inset 10px grey;
+  background-color: rgb(66,103,178);
+  /* box-shadow: 0 2px #666;
+  transform: translateY(10px); */
+}
+}
