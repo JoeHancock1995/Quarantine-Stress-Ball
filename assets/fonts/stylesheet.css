@@ -1,0 +1,19 @@
+
+@font-face {
+    font-family:"Lucida Grande";
+    src:url("Lucida Grande.woff2") format("woff2"),url("Lucida Grande.woff") format("woff"),url("Lucida Grande.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"FacebookLetterFaces";
+    src:url("FACEBOLF.woff2") format("woff2"),url("FACEBOLF.woff") format("woff"),url("FACEBOLF.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Lucida Grande Bold";
+    src:url("Lucida Grande Bold.woff2") format("woff2"),url("Lucida Grande Bold.woff") format("woff"),url("Lucida Grande Bold.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+        
