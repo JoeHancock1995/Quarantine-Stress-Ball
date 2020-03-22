@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div>
+    <input type="button" value="CLICK HERE" id="countButton" />
+    Button was pressed - <span id="displayCount">0</span> - times.
+    <input type="button" value="RESET" id="resetButton" />
+</div>
+    <script>
+  $("#countButton").on('click', function (e) {
+        if (typeof (Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+                localStorage.clickcount = parseInt($("#displayCount").text());
+                localStorage.clickcount = Number(localStorage.clickcount) + 1;
+            } else {
+                localStorage.clickcount = 0;
+            }
+            document.getElementById("displayCount").innerHTML = localStorage.clickcount;
+        } else {
+            document.getElementById("displayCount").innerHTML = 0;
+        }
+    });
+    $("#resetButton").on('click', function (e) {
+        localStorage.clickcount = 0;
+        document.getElementById("displayCount").innerHTML = localStorage.clickcount;
+    });
+
+        // var count = 0;
+        // var countButton = document.getElementById("countButton");
+        // var displayCount = document.getElementById("displayCount");
+        // countButton.onclick = function () {
+        //     count++;
+        //     displayCount.innerHTML = count;
+        // }
+        // resetButton.onclick = function () {
+        //     count = 0;
+        //     displayCount.innerHTML = count;
+        // };
+    </script>
+</body>
+
+</html>
